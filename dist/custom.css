@@ -1,0 +1,79 @@
+:root {
+  --orange: #4a8cff;
+  --primary-gradient: linear-gradient(90deg, #ffbb04 1.42%, #ff8d22 23.38%);
+}
+
+@font-face {
+  font-family: "msb";
+  src: url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "msr";
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "msl";
+  src: url("/assets/fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "cor";
+  src: url("/assets/fonts/Condiment-Regular.ttf") format("truetype");
+  font-weight: 500;
+}
+
+.msb {
+  font-family: "msb";
+}
+
+.msr {
+  font-family: "msr";
+}
+
+.msl {
+  font-family: "msl";
+}
+.cor {
+  font-family: "cor";
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  /* background-color: rgb(31, 31, 31); */
+  font-family: msr;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-primary-gradient {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.btn {
+  border: 1px solid #000;
+  background: linear-gradient(180deg, #ffdf1f 0%, #ff6102 100%);
+}
+
+.btn:hover {
+  color: white;
+  background: linear-gradient(180deg, #cfb001 0%, #bc4800 100%);
+}
+.btn:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease-in-out;
+}
