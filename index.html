@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/dist/custom.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- main wraper -->
+    <div class="flex relative overflow-x-hidden flex-col mx-auto min-w-screen max-w-[1600px]">
+        <!-- navigation   -->
+        <nav
+            class="flex absolute w-full top-0 left-0 text-black bg-transparent z-50 flex-wrap items-center justify-between sm:px-10 sm:py-6 px-2 py-4  ">
+            <div class="flex items-center flex-shrink-0 text-black md:mr-10 ">
+                <img src="/assets/logo/logo_lght2.png" class="font-semibold md:w-[12rem] w-[8rem] tracking-tight" />
+            </div>
+
+            <div class="flex items-center font-bold order-2 md:order-3">
+                <a href="#"
+                    class=" btn sm:text-sm text-[12px] sm:px-4   md:py-2 sm:py-1 px-2 py-2 leading-none border rounded-md border-white hover:border-orange-600 hover:text-gray-800 hover:bg-white mr-2">
+                    Sign In
+                </a>
+                <a href="#"
+                    class=" btn sm:text-sm text-[12px] sm:px-4   md:py-2 sm:py-1 px-2 py-2 leading-none border rounded-md border-white hover:border-orange-600 hover:text-gray-800 hover:bg-white mr-2 md:mr-0">Sign
+                    Up</a>
+                <button id="nav-toggle"
+                    class="flex items-center px-2 sm:px-3 py-2 border  rounded   border-orange-800 text-orange-700 hover:border-orange-600 ml-0 md:hidden">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="nav-content"
+                class="w-full block  flex-grow msb md:flex md:items-center md:w-auto hidden order-3 md:order-1">
+                <div
+                    class="text-sm md:flex-grow md:mt-0 mt-5 md:bg-transparent bg-gray-200 md:border-none border-2 border-orange-400 rounded-md">
+                    <a href="#"
+                        class="block py-2 px-2 md:px-0 md:py-0 mt-2 md:inline-block md:mt-0 text-black hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg md:mr-4  ">
+                        Features
+                    </a>
+                    <a href="#"
+                        class="block py-2 px-2 md:px-0 md:py-0 md:inline-block md:mt-0 text-black hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg md:mr-4  ">
+                        FAQ’s
+                    </a>
+                    <a href="#"
+                        class="block py-2 px-2 md:px-0 md:py-0 md:inline-block md:mt-0 text-black hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg md:mr-4  ">
+                        Blogs
+                    </a>
+                    <a href="#"
+                        class="block py-2 px-2 mb-2 md:mb-0 md:px-0 md:py-0 md:inline-block md:mt-0 text-black hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation ended -->
+
+
+
+        <!-- hero seciton -->
+        <section id="Hero" class=" min-h-screen flex items-center  bg-white text-black">
+
+            <div
+                class=" h-full md:mt-5 mb-10   mt-28   px-4 md:px-6 lg:pr-8 lg:pl-16 pl-5  flex gap-5 flex-col justify-between md:flex-row items-center">
+
+                <div class="w-full md:w-1/2 md:mt-28   mb-8 md:mb-0">
+                    <h1 data-aos="fade-up" class="text-4xl md:text-5xl md:lg:leading-snug md:leading-tight lg:text-6xl mb-4 text-left">
+                        <span class="msb"> Exchange your crypto assets instantly on </span>
+                        <span class="cor text-primary-gradient"> Swapfry </span>
+                    </h1>
+                    <p data-aos="fade-up" data-aos-delay="300"  class="text-sm max-w-[37rem]   font-medium lg:text-lg mb-6 text-gray-800">
+                        You can instantly swap your cryptocurrency assets on Swapfry with minimal fees. You can
+                        instantly swap your cryptocurrency assets on Swapfry with minimal fees.
+                    </p>
+                    <button data-aos="fade-up" data-aos-delay="500" class=" btn font-bold py-2 px-6 rounded-full transition duration-300">
+                        Get Started
+                    </button>
+
+                    <div class="flex items-center md:mt-28 mt-10  space-x-10">
+                        <div  >
+                            <span class="block md:text-5xl msb text-2xl  ">40M+</span>
+                            <span class="text-sm text-black font-semibold  text-[12px]">Today, I would like to share
+                                with</span>
+                        </div>
+                        <div
+                            class="w-1 h-10 rounded-full bg-gray-500 bg-gradient-to-b from-[#EFEFEF] via-[#b4b4b4] to-[#F3F3F3] ">
+                        </div>
+                        <div>
+                            <span class="block md:text-5xl msb text-2xl  ">20k+</span>
+                            <span class="text-sm text-black font-semibold  text-[12px]">Today, I would like to share
+                                with</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full flex  md:justify-end justify-center ">
+
+                    <div class=" md:w-[35rem] ">
+                        <img src="/assets/images/hreo-img2.png" alt="Hero Image"
+                            class="w-full h-auto object-cover rounded-lg shadow-lg" />
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- hero seciton ended -->
+
+
+
+        <!-- get started  -->
+        <section id="get-started" class="bg-white py-16">
+            <div class=" lg:mx-20  md:mx-10  mx-5  flex flex-col  md:flex-row md:justify-between md:gap-5 gap-10  ">
+                <div class=" md:w-[40rem] w-full ">
+                    <div data-aos="fade-right" class="  ">
+
+                        <img src="/assets/images/get-started.png" alt="Get Started"
+                            class=" w-full h-auto object-cover rounded-lg  ">
+                    </div>
+                </div>
+
+                <div class="  md:width-[60%] w-full  text-right flex flex-col items-end sm:gap-8 gap-5 ">
+                    <h2 data-aos="fade-up"   class="  text-2xl md:text-4xl lg:text-5xl msb font-semibold    text-black">How to get started ?
+                    </h2>
+                    <p data-aos="fade-up" data-aos-delay="200" class="md:text-lg max-w-[40rem] text-sm text-gray-800 msr  ">
+                        To get started with Swapfry, simply follow the steps outlined on this landing page.
+                        What are your thoughts? I hope you find it helpful and have a fantastic day.
+                    </p>
+                    <button data-aos="fade-up" data-aos-delay="400" class="btn w-fit font-bold py-2 px-6 rounded-full transition duration-300">
+                        Start Swapping Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center py-16">
+
+                <div class="flex mx-5 flex-col md:flex-row justify-center items-center gap-8">
+                    <div data-aos="zoom-in" class="flex flex-col items-center text-center w-full md:w-1/3 max-w-xs">
+                        <img src="/assets/images/hs1.png" alt="Account Creation" class="w-24 h-24 mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Account Creation</h3>
+                        <p class="text-sm text-gray-600">Create your account quickly and securely to get started.</p>
+                    </div>
+                    <div  class="hidden md:flex items-center justify-center w-24">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="12 -2 70 30" stroke="currentColor"
+                            class="w-24 h-8 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M70 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </div>
+                    <div data-aos="zoom-in" class="flex flex-col items-center text-center w-full md:w-1/3 max-w-xs">
+                        <img src="/assets/images/hs2.png" alt="Add Fund" class="w-24 h-24 mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Add Fund</h3>
+                        <p class="text-sm text-gray-600">Easily add funds to your account using various payment methods.
+                        </p>
+                    </div>
+                    <div class="hidden md:flex items-center justify-center w-24">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="12 -2 70 30" stroke="currentColor"
+                            class="w-24 h-8 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M70 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </div>
+                    <div data-aos="zoom-in"  class="flex flex-col items-center text-center w-full md:w-1/3 max-w-xs">
+                        <img src="/assets/images/hs3.png" alt="Swap Instantly" class="w-24 h-24 mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Swap Instantly</h3>
+                        <p class="text-sm text-gray-600">Exchange your assets instantly with our fast and efficient
+                            platform.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- get started end -->
+
+
+        <!-- Features -->
+        <section id="features" class="features-section py-16 md:px-10 px-5 bg-gray-950 text-white ">
+            <div class="   mx-auto ">
+                <div class="mb-12">
+                    <h2 data-aos="fade-up"  class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4"><span
+                            class="cor text-primary-gradient"> Swapfry </span> Features</h2>
+                    <p data-aos="fade-up" data-aos-delay="300" class="md:text-lg text-sm text-gray-300 max-w-2xl">Discover the powerful features that make our
+                        platform
+                        stand out. We offer a range of tools and services designed to enhance your experience and
+                        streamline your transactions.</p>
+                </div>
+                <div class="flex gap-5 flex-wrap py-5 ">
+                    <div
+                        class="w-full md:w-[48%] lg:w-[32%] hover:bg-[#261602]       border-2 border-orange-300 rounded-xl py-5 px-3 ">
+                        <div class="flex items-start gap-5">
+                            <img src="/assets/images/f1.png" alt="Feature 1" class="w-16 h-16">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-xl font-semibold">Instant Trade</h3>
+                                <p class="text-gray-300 text-sm  ">With Swapfry, your transactions are executed in a
+                                    blink of an eye. No more missed opportunities due to the volatile
+                                    market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full md:w-[48%] lg:w-[32%] hover:bg-[#261602]     border-2 border-orange-300 rounded-xl py-5 px-3 ">
+                        <div class="flex items-start gap-5">
+                            <img src="/assets/images/f2.png" alt="Feature 1" class="w-16 h-16">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-xl font-semibold">Wide Asset Selection</h3>
+                                <p class="text-gray-300 text-sm  ">With Swapfry, your transactions are executed in a
+                                    blink of an eye. No more missed opportunities due to the volatile
+                                    market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full md:w-[48%] lg:w-[32%] hover:bg-[#261602]       border-2 border-orange-300 rounded-xl py-5 px-3 ">
+                        <div class="flex items-start gap-5">
+                            <img src="/assets/images/f3.png" alt="Feature 1" class="w-16 h-16">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-xl font-semibold">User-Friendly Interface</h3>
+                                <p class="text-gray-300 text-sm  ">With Swapfry, your transactions are executed in a
+                                    blink of an eye. No more missed opportunities due to the volatile
+                                    market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full md:w-[48%] lg:w-[32%] hover:bg-[#261602]       border-2 border-orange-300 rounded-xl py-5 px-3 ">
+                        <div class="flex items-start gap-5">
+                            <img src="/assets/images/f4.png" alt="Feature 1" class="w-16 h-16">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-xl font-semibold">Transparent and Low Fees</h3>
+                                <p class="text-gray-300 text-sm  ">With Swapfry, your transactions are executed in a
+                                    blink of an eye. No more missed opportunities due to the volatile
+                                    market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full md:w-[48%] lg:w-[32%] hover:bg-[#261602]       border-2 border-orange-300 rounded-xl py-5 px-3 ">
+                        <div class="flex items-start gap-5">
+                            <img src="/assets/images/f5.png" alt="Feature 1" class="w-16 h-16">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-xl font-semibold">Robust Security</h3>
+                                <p class="text-gray-300 text-sm  ">With Swapfry, your transactions are executed in a
+                                    blink of an eye. No more missed opportunities due to the volatile
+                                    market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full md:w-[48%] lg:w-[32%] hover:bg-[#261602]       border-2 border-orange-300 rounded-xl py-5 px-3 ">
+                        <div class="flex items-start gap-5">
+                            <img src="/assets/images/f6.png" alt="Feature 1" class="w-16 h-16">
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-xl font-semibold">Reliable Customer Support</h3>
+                                <p class="text-gray-300 text-sm  ">With Swapfry, your transactions are executed in a
+                                    blink of an eye. No more missed opportunities due to the volatile
+                                    market.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Features end -->
+
+
+        <!-- Help  -->
+        <section id="help" class="bg-white py-16 px-5 md:px-10 ">
+            <div class="  mx-auto  ">
+                <div class="flex flex-col md:flex-row gap-5">
+                    <!-- Left side content -->
+                    <div class="md:w-1/2 flex items-center justify-center ">
+                        <div class="w-[40rem] flex flex-col gap-10   ">
+
+                            <h2 data-aos="fade-up"   class="text-3xl md:text-5xl msb ">Looking For Help ?</h2>
+                            <p data-aos="fade-up" data-aos-delay="300" class="text-black   font-medium">If you need assistance, our support team is here to help. Whether you have questions about our services or need technical support, we are available 24/7 to provide the help you need. Feel free to reach out to us anytime, and we will ensure your issues are resolved promptly and efficiently.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right side content -->
+                    <div class="md:w-1/2 flex justify-center ">
+
+                        <div class="flex w-[30rem] flex-col gap-5">
+
+                            <!-- First help item -->
+                            <div
+                                class="flex gap-5 border-2 border-orange-400 rounded-xl p-4 hover:text-white  hover:bg-black transition-all transform duration-200 ">
+                                <img src="/assets/images/help1.png" alt="Support" class="w-16 h-16 object-contain">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">24 / 7 Chat Support </h3>
+                                    <p class="    ">Get 24/7 chat support with our friendly customer service agents at
+                                        your service.</p>
+                                </div>
+                            </div>
+
+                            <!-- Second help item -->
+                            <div
+                                class="flex gap-5 border-2 border-orange-400 rounded-xl p-4 hover:text-white  hover:bg-black transition-all transform duration-200 ">
+                                <img src="/assets/images/help2.png" alt="FAQ" class="w-16 h-16 object-contain">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Frequently Asked Questions</h3>
+                                    <p class=" ">Get answers to all your questions from frequently asked questions on
+                                        Rijex.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Help end -->
+
+        <!-- top curency  -->
+        <section id="top-currency" class="bg-gray-100 py-16 px-5 md:px-10">
+            <div class="mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl msb mb-4">Top Crypto Currencies</h2>
+                <p class="text-black font-medium mb-10">Check out the latest top cryptocurrencies and their prices.</p>
+                <div class="overflow-x-auto mx-auto flex justify-center">
+                    <div class="max-w-[70rem] w-full">
+                        <table class="w-full bg-gray-700 rounded-2xl overflow-hidden text-white border border-gray-200">
+                            <thead>
+                                <tr class="bg-gray-800 text-gray-300 uppercase text-sm leading-normal">
+                                    <th class="py-5 px-6 text-left">From</th>
+                                    <th class="py-5 px-6 text-left">To</th>
+                                    <th class="py-5 px-6 text-left">Price</th>
+                                    <th class="py-5 px-6 text-left">Swap</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- row1  -->
+                                <tr class="bg-gray-950 text-white hover:bg-gray-800">
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/Ethereum.png" alt="Coin Logo" class="w-6 h-6 mr-2">
+                                            <span>Ethereum</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/usdt.png" alt="USDT Logo" class="w-6 h-6 mr-2">
+                                            <span>USDT</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">$5000</td>
+                                    <td class="py-5 px-6 text-left">
+                                        <img src="/assets/images/swap.png" alt="Swap Logo" class="w-6 h-6">
+                                    </td>
+                                </tr>
+
+                                <!-- row2  -->
+                                <tr class="bg-gray-950 text-white hover:bg-gray-800">
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/bnb.png" alt="Coin Logo" class="w-6 h-6 mr-2">
+                                            <span>BNB</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/usdt.png" alt="USDT Logo" class="w-6 h-6 mr-2">
+                                            <span>USDT</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">$5000</td>
+                                    <td class="py-5 px-6 text-left">
+                                        <img src="/assets/images/swap.png" alt="Swap Logo" class="w-6 h-6">
+                                    </td>
+                                </tr>
+
+                                <!-- row3  -->
+                                <tr class="bg-gray-950 text-white hover:bg-gray-800">
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/XRP.png" alt="Coin Logo" class="w-6 h-6 mr-2">
+                                            <span>XRP</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/usdt.png" alt="USDT Logo" class="w-6 h-6 mr-2">
+                                            <span>USDT</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">$5000</td>
+                                    <td class="py-5 px-6 text-left">
+                                        <img src="/assets/images/swap.png" alt="Swap Logo" class="w-6 h-6">
+                                    </td>
+                                </tr>
+
+                                <!-- row4  -->
+                                <tr class="bg-gray-950 text-white hover:bg-gray-800">
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/Cardano.png" alt="Coin Logo" class="w-6 h-6 mr-2">
+                                            <span>Cardano</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/usdt.png" alt="USDT Logo" class="w-6 h-6 mr-2">
+                                            <span>USDT</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">$5000</td>
+                                    <td class="py-5 px-6 text-left">
+                                        <img src="/assets/images/swap.png" alt="Swap Logo" class="w-6 h-6">
+                                    </td>
+                                </tr>
+                                <!-- row5  -->
+                                <tr class="bg-gray-950 text-white hover:bg-gray-800">
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/dogecoin.png" alt="Coin Logo" class="w-6 h-6 mr-2">
+                                            <span>Dogecoin</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/usdt.png" alt="USDT Logo" class="w-6 h-6 mr-2">
+                                            <span>USDT</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">$5000</td>
+                                    <td class="py-5 px-6 text-left">
+                                        <img src="/assets/images/swap.png" alt="Swap Logo" class="w-6 h-6">
+                                    </td>
+                                </tr>
+                                <!-- row6  -->
+                                <tr class="bg-gray-950 text-white hover:bg-gray-800">
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/Litecoin.png" alt="Coin Logo" class="w-6 h-6 mr-2">
+                                            <span>Litecoin</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">
+                                        <div class="flex items-center">
+                                            <img src="/assets/images/usdt.png" alt="USDT Logo" class="w-6 h-6 mr-2">
+                                            <span>USDT</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-5 px-6 text-left">$5000</td>
+                                    <td class="py-5 px-6 text-left">
+                                        <img src="/assets/images/swap.png" alt="Swap Logo" class="w-6 h-6">
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- top curency end  -->
+
+
+
+        <!-- footer  -->
+        <footer class="bg-gray-950 text-white rounded-t-2xl p-6">
+            <div class="mx-auto max-w-screen-xl">
+                <div class="md:flex md:justify-between tablet:justify-center">
+
+                    <div
+                        class="border-2 tablet:rounded-tl-[5rem] tablet:border-l-2 tablet:border-l-orange-400 rounded-tr-[5rem] border-l-0 border-b-0 p-5 border-t-orange-400 border-r-orange-400 flex flex-col gap-5 mb-6 max-w-[40%] tablet:max-w-[100%] tablet:items-center md:mb-0">
+                        <a href="#" class="flex items-center">
+                            <img src="./assets/logo/logo_lght.png" class="h-[50px] me-3" alt="Logo" />
+                        </a>
+                        <p class="tablet:text-center">Stay updated with the latest developments by following us on
+                            social media
+                            and joining our community. For inquiries or support, reach out to our team via email.</p>
+                        <div class="flex gap-5">
+                            <a target="_blank" href="#"><img
+                                    class="hover:scale-[1.3] w-[2rem] transform scale duration-300"
+                                    src="./assets/images/Telegram App.png" alt="YouTube" /></a>
+                            <a target="_blank" href="#"><img
+                                    class="hover:scale-[1.3] w-[2rem] transform scale duration-300"
+                                    src="./assets/images/TwitterX.png" alt="Twitter" /></a>
+                            <a target="_blank" href="#"><img
+                                    class="hover:scale-[1.3] w-[2rem] transform scale duration-300"
+                                    src="./assets/images/Facebook.png" alt="Telegram" /></a>
+                            <a target="_blank" href="#"><img
+                                    class="hover:scale-[1.3] w-[2rem] transform scale duration-300"
+                                    src="./assets/images/Instagram.png" alt="Instagram" /></a>
+
+                        </div>
+                    </div>
+
+                    <div class="mt-16 flex gap-[5vmax] tablet:justify-evenly tablet:flex-wrap">
+                        <div class="flex flex-col tablet:items-center">
+                            <h2 class="text-primary-gradient msb mb-6 text-sm uppercase tracking-wider">Resources</h2>
+                            <ul class="  font-medium">
+                                <li class="mb-4 tablet:text-center"><a href="#Hero" class="hover:underline">Home</a>
+                                </li>
+                                <li class="tablet:text-center"><a href="#features" class="hover:underline">Features</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col tablet:items-center">
+                            <h2 class="text-primary-gradient msb mb-6 text-sm uppercase tracking-wider">Important</h2>
+                            <ul class=" font-medium">
+                                <li class="mb-4 tablet:text-center">
+                                    <a href="#get-started" class="hover:underline">Get started</a>
+                                </li>
+                                <li class="tablet:text-center"><a href="#help" class="hover:underline">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col tablet:items-center">
+                            <h2 class="text-primary-gradient msb mb-6 text-sm uppercase tracking-wider">Legal</h2>
+                            <ul class=" font-medium">
+                                <li class="mb-4 tablet:text-center"><a href="#" class="hover:underline">Privacy
+                                        Policy</a></li>
+                                <li class="tablet:text-center"><a href="#" class="hover:underline">Terms &
+                                        Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-6 border-gradient sm:mx-auto border-orange-400 lg:my-8">
+
+                <div class="sm:flex sm:items-center tablet:text-center sm:justify-between">
+                    <span class="text-sm sm:text-center ">© 2024 Swapfry. All Rights Reserved.</span>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+
+        <!-- footer end -->
+
+
+    </div>
+
+    <script src="/dist/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:1500,
+        });
+    </script>
+</body>
+
+</html>
