@@ -23,6 +23,11 @@
   src: url("/assets/fonts/Condiment-Regular.ttf") format("truetype");
   font-weight: 500;
 }
+@font-face {
+  font-family: "gb";
+  src: url("/assets/fonts/Gabriola.ttf") format("truetype");
+  font-weight: 500;
+}
 
 .msb {
   font-family: "msb";
@@ -38,6 +43,9 @@
 .cor {
   font-family: "cor";
 }
+.gb {
+  font-family: "gb";
+}
 
 * {
   margin: 0px;
@@ -49,7 +57,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   /* background-color: rgb(31, 31, 31); */
-  font-family: msr;
+  /* font-family: inter; */
 }
 
 html {
@@ -76,4 +84,29 @@ html {
 .btn:active {
   transform: scale(0.9);
   transition: transform 0.1s ease-in-out;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background: rgba(255, 0, 0, 0);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* yellow circle bg -gradiant */
+.yellow_circ_gradiant{
+  position: absolute;
+  z-index:-1;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: #ff8c0092;
+  box-shadow: 0 0 200px 200px #ff8c0034;
 }

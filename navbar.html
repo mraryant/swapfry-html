@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/dist/custom.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav
+        class="flex absolute w-full top-0 left-0 text-black bg-transparent z-50 flex-wrap items-center justify-between sm:px-10 sm:py-6 px-2 py-4  ">
+        <div class="flex items-center flex-shrink-0 text-black md:mr-10 ">
+            <a href="/">
+                <img src="/assets/logo/logo_lght.png" class="font-semibold md:w-[12rem] w-[8rem] tracking-tight" />
+            </a>
+        </div>
+    
+        <div class="flex itemsmsb order-2 md:order-3 ">
+            <a href="#"
+                class=" btn sm:text-sm text-[12px] sm:px-4   md:py-2 sm:py-1 px-2 py-2 leading-none border rounded-md border-white hover:border-orange-600 hover:text-gray-800 hover:bg-white mr-2 msb ">
+                Sign In
+            </a>
+            <a href="#"
+                class=" btn sm:text-sm text-[12px] sm:px-4   md:py-2 sm:py-1 px-2 py-2 leading-none border rounded-md border-white hover:border-orange-600 hover:text-gray-800 hover:bg-white mr-2 md:mr-0 msb">Sign
+                Up</a>
+            <button id="nav-toggle"
+                class="flex items-center px-2 sm:px-3 py-2 border  rounded   border-orange-800 text-orange-700 hover:border-orange-600 ml-0 md:hidden">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div id="nav-content"
+            class="w-full block flex-grow msb md:flex md:items-center md:w-auto hidden order-3 md:order-1">
+            <div
+                class="text-sm md:flex-grow md:mt-0 mt-5 md:bg-transparent bg-gray-200 md:border-none border-2 border-orange-400 rounded-md">
+                <a href="#features"
+                    class="block py-2 px-2 md:px-0 md:py-0 mt-2 md:inline-block md:mt-0 text-white hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg md:mr-4  ">
+                    Features
+                </a>
+                <a href="/faq.html"
+                    class="block py-2 px-2 md:px-0 md:py-0 md:inline-block md:mt-0 text-white hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg md:mr-4  ">
+                    FAQ’s
+                </a>
+                <a href="#"
+                    class="block py-2 px-2 md:px-0 md:py-0 md:inline-block md:mt-0 text-white hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg md:mr-4  ">
+                    Blogs
+                </a>
+                <a href="/support.html"
+                    class="block py-2 px-2 mb-2 md:mb-0 md:px-0 md:py-0 md:inline-block md:mt-0 text-white hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg">
+                    Support
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+        });
+    </script>
+</body>
+
+</html>

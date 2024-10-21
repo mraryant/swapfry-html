@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     './index.html',
+    './*.html', 
     './src/**/*.{html,js}' // Add this line to include all HTML and JS files in the src directory
   ],
   theme: {

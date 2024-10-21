@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/dist/custom.css" />
+    <style>
+        /* Smooth transition for the FAQ answer visibility */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .faq-answer.open {
+            max-height: 200px;
+            /* Adjust this value depending on your content */
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+
+
+    <div class=" flex relative min-h-screen overflow-x-hidden flex-col mx-auto min-w-screen max-w-[1600px]">
+
+        <nav
+            class="flex absolute w-full top-0 left-0 text-black bg-transparent z-50 flex-wrap items-center justify-between sm:px-10 sm:py-6 px-2 py-4  ">
+            <div class="flex items-center flex-shrink-0 text-black md:mr-10 ">
+                <a href="/">
+                    <img src="/assets/logo/logo_lght.png" class="font-semibold md:w-[12rem] w-[8rem] tracking-tight" />
+                </a>
+            </div>
+
+            <div class="flex itemsmsb order-2 md:order-3 ">
+                <a href="#"
+                    class=" btn sm:text-sm text-[12px] sm:px-4   md:py-2 sm:py-1 px-2 py-2 leading-none border rounded-md border-white hover:border-orange-600 hover:text-gray-800 hover:bg-white mr-2 msb ">
+                    Sign In
+                </a>
+                <a href="#"
+                    class=" btn sm:text-sm text-[12px] sm:px-4   md:py-2 sm:py-1 px-2 py-2 leading-none border rounded-md border-white hover:border-orange-600 hover:text-gray-800 hover:bg-white mr-2 md:mr-0 msb">Sign
+                    Up</a>
+                <button id="nav-toggle"
+                    class="flex items-center px-2 sm:px-3 py-2 border  rounded   border-orange-800 text-orange-700 hover:border-orange-600 ml-0 md:hidden">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="nav-content"
+                class="w-full block flex-grow msb md:flex md:items-center md:w-auto hidden order-3 md:order-1">
+                <div
+                    class="text-sm md:flex-grow md:mt-0 mt-5 md:bg-transparent bg-gray-800 md:border-none border-2 border-orange-400 rounded-md">
+                    <a href="#features"
+                        class="block py-2 px-2 tablet:border-b-2 border-gray-500 md:px-0 md:py-0 mt-2 md:inline-block md:mt-0 text-white hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg md:mr-4  ">
+                        Features
+                    </a>
+                    <a href="/faq.html"
+                        class="block py-2 px-2  tablet:border-b-2 border-gray-500 md:px-0 md:py-0 md:inline-block md:mt-0 text-white hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg md:mr-4  ">
+                        FAQ’s
+                    </a>
+                    <a href="#"
+                        class="block py-2 px-2 tablet:border-b-2 border-gray-500 md:px-0 md:py-0 md:inline-block md:mt-0 text-white hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg md:mr-4  ">
+                        Blogs
+                    </a>
+                    <a href="/support.html"
+                        class="block py-2 px-2   mb-2 md:mb-0 md:px-0 md:py-0 md:inline-block md:mt-0 text-white hover:text-orange-400 hover:bg-gray-300 md:hover:bg-transparent hover:rounded-lg">
+                        Support
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- yellow bg-gradiant -->
+        <div class="yellow_circ_gradiant bottom-[100px] left-[100px]"></div>
+
+        <div class="max-w-5xl mx-auto mt-16 px-4 sm:px-6 lg:px-8 py-12">
+            <!-- <h1 class="text-4xl font-bold text-center text-gray-800 mb-12">Frequently Asked Questions</h1> -->
+            <h1
+                class="text-3xl text-white md:text-4xl mb-12 md:lg:leading-snug md:leading-tight lg:text-[2.5vw] my-4 text-center">
+                <span class="msb"> Frequently Asked Questions </span>
+                <span class="cor text-primary-gradient"> Swapfry </span>
+            </h1>
+            <div class="space-y-6">
+
+                <!-- FAQ Item 1 -->
+                <div class=" border-b border-gray-300">
+                    <button
+                        class="faq-question flex justify-between items-center w-full text-left py-4 focus:outline-none font-medium text-lg">
+                        <span class="text-white font-bold">What is your return policy?</span>
+                        <svg class=" w-6 h-6 text-white transition-transform transform rotate-0 faq-icon"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer text-slate-300">
+                        <p class="py-2">We accept returns within 30 days of purchase. Please ensure the items are in
+                            original
+                            condition.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border-b border-gray-300">
+                    <button
+                        class="faq-question flex justify-between items-center w-full text-left py-4 focus:outline-none font-medium text-lg">
+                        <span class="text-white font-bold">How long does shipping take?</span>
+                        <svg class="w-6 h-6 text-white transition-transform transform rotate-0 faq-icon"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer text-slate-300">
+                        <p class="py-2">Shipping typically takes 5-7 business days depending on your location.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border-b border-gray-300">
+                    <button
+                        class="faq-question flex justify-between items-center w-full text-left py-4 focus:outline-none font-medium text-lg">
+                        <span class="text-white font-bold">Do you offer international shipping?</span>
+                        <svg class="w-6 h-6 text-white transition-transform transform rotate-0 faq-icon"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer text-slate-300">
+                        <p class="py-2">Yes, we ship internationally. Delivery times may vary based on location.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border-b border-gray-300">
+                    <button
+                        class="faq-question flex justify-between items-center w-full text-left py-4 focus:outline-none font-medium text-lg">
+                        <span class="text-white font-bold">Can I track my order?</span>
+                        <svg class="w-6 h-6 text-white transition-transform transform rotate-0 faq-icon"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer text-slate-300">
+                        <p class="py-2">Yes, we provide tracking details once your order is shipped.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="border-b border-gray-300">
+                    <button
+                        class="faq-question flex justify-between items-center w-full text-left py-4 focus:outline-none font-medium text-lg">
+                        <span class="text-white font-bold">Can I track my order?</span>
+                        <svg class="w-6 h-6 text-white transition-transform transform rotate-0 faq-icon"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer text-slate-300">
+                        <p class="py-2">Yes, we provide tracking details once your order is shipped.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Collapsible FAQ -->
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('open');
+
+                const icon = question.querySelector('.faq-icon');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
